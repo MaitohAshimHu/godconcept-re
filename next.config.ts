@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "godconcept.in",
+        pathname: "/cdn/shop/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
